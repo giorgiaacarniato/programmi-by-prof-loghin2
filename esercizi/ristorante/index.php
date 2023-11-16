@@ -63,41 +63,8 @@
             <div class="zona_destra">
 
             <h2 class="title2"> Menu del Ristorante </h2>
-       
-        <ul>
-            <?php
-      
-       $antipasti = array(
-        array("nome" => "Etruska", "descrizione" => "cipolla stufata, farina di castagne, uovo, formaggio Ertusko gratinato", "prezzo" => 11,50),
-        array("nome" => "Bruschetta", "descrizione" => "pane tostao con pomodoro mozzarella e condimento a scelta", "prezzo" => 8,50),
-       );
     
-        
-      
-
-
-
-
-
-
-
-
-            $piatti = array(
-                "Spaghetti alla Carbonara",
-                "Pizza Margherita",
-                "Tagliatelle al Ragù",
-                "Insalata Caprese",
-                "Tiramisù",
-                "Gelato alla Vaniglia");
-
-                foreach($piatti as $valore)
-                {
-
-                    echo"<li>$valore</li>";
-
-                }
-            ?>
-
+       
             </div>
         </div>
 </body>
