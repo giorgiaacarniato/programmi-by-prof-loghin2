@@ -65,6 +65,55 @@
             <h2 class="title2"> Menu del Ristorante </h2>
     
        
+            <h2 class="title2"> Menu del Ristorante "Il Paperotto" </h2>
+
+            <div class="menu">
+        <?php
+        // Definizione dell'array dei piatti
+        $piatti = array(
+            "Antipasti" => array(
+                array("Nome" => "La rustica", "Descrizione" => "Bruschetta composta da pane tostato, pomodoro fresco, basilico con condimenti a scelta", "Prezzo" => 6.50),
+                array("Nome" => "Etruska", "Descrizione" => " involtino con cipolla stufata, farina di castagne, uovo, formaggio Ertusko gratinato", "Prezzo" => 8.75),
+                // Aggiungi altri antipasti qui
+            ),
+            "Primi" => array(
+                array("Nome" => "Gnocchetti di farina di castagne", "Descrizione" => "gnocchi fatti in casa  di farina di castagne conditi con  prosciutto di Zocca croccante e rosmarino ", "Prezzo" => 9.00),
+                array("Nome" => "Tagliatelle al contrario", "Descrizione" => "Tagliatelle di grano Saragolla con ragù di lombo al coltello e saba *", "Prezzo" => 11.25),
+                // Aggiungi altri primi piatti qui
+            ),
+            "Secondi" => array(
+                array("Nome" => "Imprigionata alla Petroniana", "Descrizione" => "cotoletta ripiena con prosciutto di Zocca e Parmigiano Reggiano", "Prezzo" => 13.50),
+                array("Nome" => "Del verde tutto intorno", "Descrizione" => "piatto unico a base di vegetali", "Prezzo" => 14.00),
+                // Aggiungi altri secondi piatti qui
+            ),
+            "Dolci" => array(
+                array("Nome" => "millefoglie alla boscaiola", "Descrizione" => "Millefoglie al cacao, crema di ricotta e frutta di stagione", "Prezzo" => 7.50),
+                array("Nome" => "biscotti al bassotto", "Descrizione" => "Biscotti di grani antichi e cagnina romagnola", "Prezzo" => 6.75),
+                // Aggiungi altri dolci qui
+            )
+        );
+
+        // Generazione dinamica del menù utilizzando il foreach
+        foreach ($piatti as $categoria => $piatti_categoria) {
+            echo "<div class='section'>";
+            echo "<h3>$categoria</h3>";
+            foreach ($piatti_categoria as $piatto) {
+                echo "<div class='dish'>";
+                echo "<strong>{$piatto['Nome']}</strong> - {$piatto['Descrizione']} - Prezzo: {$piatto['Prezzo']}€";
+                echo "</div>";
+            }
+            echo "</div>";
+        }
+        ?>
+
+    </div>
+
+            
+
+            
+       
+        
+
             </div>
         </div>
 </body>
