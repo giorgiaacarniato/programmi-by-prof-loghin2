@@ -7,43 +7,36 @@
     
 <main class="form-signin">
 
+    <h1> Benvenuto utente nel nostro sito, per favore inserisci i tuoi dato! </h1>
 
-<form action"./risultato.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" ><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-  <label for="date"> data:</label><br>
-  <input type="date" id="dte" name="date">
-  <label for="sport">sport:</label><br>
-  <input type="text" id="spot" name="sport">
-  <label for="password">password:</label><br>
-  <input type="pasword" id="password" name="passowrd">
-  <input type="submit"></input>
-
-
-</form>
-  
-
-
-    <div class="form-floating">
+   <div class="form-floating">
+   <form action="./risultato.php">
+      <input type="text" class="form-control" id="fname" placeholder="Nome">
+      <label for="fname "></label>
+      <input type="text" class="form-control" id="lname" placeholder="Cognome">
+      <label for="lname"></label>
+      <input type="number" class="form-control" id="età" placeholder="Età">
+      <label for="età"></label>
+      <input type="text" class="form-control" id="sport" placeholder="Sport Preferito">
+      <label for="sport"></label>
+      <input type="color" class="form-control" id="colore" placeholder="Scegli un colore">
+      <label for="colore"></label>
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
+      <label for="floatingPassword"></label>
 
+      <button class="w-100 btn btn-lg btn-primary" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Registrazione</font></font></button>
 
-    
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+   </form>
+   </div>
+      
   </form>
-
-  <h2>Text input fields</h2>
 
 
 
 </main>
 
-
-    
-  
-
 </body>
+
+
+
+
