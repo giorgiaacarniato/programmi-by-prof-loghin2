@@ -32,6 +32,22 @@
                 <label for="floatingPassword"></label>
 
                 <button class="w-100 btn btn-lg btn-primary" type="submit">Registrazione</button>
+
+                <?php
+                 $error_message = "";
+
+                      if (isset($_GET['password'])) {
+                        $input_password = $_GET['password'];
+
+                      if ($input_password === 'info2023') {
+                           header('Location: paginarichieste.html');
+                           exit();
+                      } else {
+                       $error_message = "Password errata. Riprova.";
+                      }
+}
+?>
+
             </form>
         </div>
     </main>

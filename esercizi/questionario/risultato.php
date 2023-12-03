@@ -29,12 +29,16 @@
             $sport = $_GET["sport"];
             $color = $_GET["color"];
 
+            echo"<div class='risultato' style='background-color: &color;'>";
             echo "<div class='bg-light p-4' style='background-color: $color;'>";
             echo "<p><strong>Nome:</strong> $fnome </p>";
             echo "<p><strong>Cognome:</strong> $lnome </p>";
             echo "<p><strong>Età:</strong> $age </p>";
             echo "<p><strong>Sport:</strong> $sport </p>";
             echo "</div>";
+        }
+        else {
+            echo"<p> Non abbiamo ricevuto nessun dato. </p>";
         }
         ?>
     </div>
