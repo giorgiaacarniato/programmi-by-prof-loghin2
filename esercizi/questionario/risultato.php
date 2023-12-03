@@ -20,28 +20,45 @@
     </style>
 </head>
 <body>
-    <div class="result-container">
-        <?php
-        if(!empty($_GET)){
-            $fnome = $_GET["fnome"];
-            $lnome = $_GET["lnome"];
-            $age = $_GET["age"];
-            $sport = $_GET["sport"];
-            $color = $_GET["color"];
 
-            echo"<div class='risultato' style='background-color: &color;'>";
-            echo "<div class='bg-light p-4' style='background-color: $color;'>";
-            echo "<p><strong>Nome:</strong> $fnome </p>";
-            echo "<p><strong>Cognome:</strong> $lnome </p>";
-            echo "<p><strong>Età:</strong> $age </p>";
-            echo "<p><strong>Sport:</strong> $sport </p>";
-            echo "</div>";
-        }
-        else {
-            echo"<p> Non abbiamo ricevuto nessun dato. </p>";
-        }
+<h2 style="text-align: center;"> Ecco a te i tuoi dati: </h3><br>
+
+<?php
+$color = $_GET["color"];
+echo "<div class='risultato' style='background-color: $color;'>";
+?>
+
+<table>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Età</th>
+    <th>Sport preferito</th>
+
+    <tr><td>
+        <?php
+        $fnome = $_GET["fnome"];
+        echo $fnome;
         ?>
-    </div>
+    </td><td>
+    <?php
+        $lnome = $_GET["lnome"];
+        echo $lnome;
+        ?>
+    </td><td>
+    <?php
+        $age = $_GET["age"];
+        echo $age;
+        ?>
+    </td><td>
+    <?php
+        $sport = $_GET["sport"];
+        echo $sport;
+        ?>
+    </td>
+</table>
+
+
+    
 </body>
 </html>
 
