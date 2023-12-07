@@ -40,7 +40,7 @@
                         $input_password = $_GET['password'];
 
                       if ($input_password === 'info2023') {
-                           header('Location: paginarichieste.html');
+                           header('Location: risultato.php');
                            exit();
                       } else {
                        $error_message = "Password errata. Riprova.";
