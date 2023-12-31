@@ -1,4 +1,5 @@
 <?php
+
 $cUsername = "utente";
 $cPassword = "passwordSegreta";
 
@@ -9,21 +10,23 @@ if (isset($_GET["username"]) && isset($_GET["password"])) {
     $username = $_GET["username"];
     $password = $_GET["password"];
 
+    
     if ($username === $cUsername && $password === $cPassword) {
-      
+       
         $welcome = "benvenuto.php?username=$username";
-        echo "<script>window.location.replace('$welcomeURL');</script>";
+        echo "<script>window.location.replace('$welcome');</script>";
         exit;
     } else {
         $loginAttempts++;
         if ($loginAttempts < 3) {
-            $message = "Le credenziali inserite sono errate. I tentativi rimasti sono: " . (3 - $loginAttempts);
+            $message = "Credenziali errate. I tentativi rimasti sono: " . (3 - $loginAttempts);
         } else {
             $message = "Ci dispiace! Hai superato il numero massimo di tentativi. Accesso bloccato.";
         }
     }
 }
 ?>
+
 
 
 

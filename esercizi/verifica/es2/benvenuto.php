@@ -1,8 +1,11 @@
 <?php
+
 if (isset($_GET["username"])) {
     $username = $_GET["username"];
+
     echo "Benvenuto, $username!";
 } else {
+ 
     echo "Errore: Username mancante.";
 }
 ?>
