@@ -18,7 +18,6 @@
     $numeroA = $_GET['numeroA'];
     $numeroB = $_GET['numeroB'];
 
-    echo "<h2>Tabella $numeroA x $numeroB contenente il testo \"$testo\" in ogni cella:</h2>";
     echo "<table>";
 
     for ($u = 1; $u <= $numeroA; $u++) {
@@ -33,3 +32,4 @@
     ?>
 </body>
 </html>
+

@@ -8,7 +8,7 @@
     <main class="form-signin">
         <h1>Benvenuto utente! Per favore inserisci i dati richiesti </h1>
         <div class="form-floating">
-            <form action="tabelladati.php" method="GET">
+            <form action="tabella.php" method="GET">
                 <input type="text" class="form-control" id="testo" name="testo" placeholder="testo" required>
                 <label for="testo"></label>
 
